@@ -1,11 +1,24 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My angular app!</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/style.css" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="/javascripts/angular-ui-router.min.js"></script>
+    <script src="/javascripts/angularApp.js"></script>
+    <script src="/javascripts/services.js"></script>
+    <script src="/javascripts/directives.js"></script>
+    <script src="/javascripts/controllers.js"></script>
+</head>
+
+<body ng-app="flapperNews">
+<div class="row">
+    <div class="col-md-6 col-md-offset-3">
+        <div ui-view></div>
+    </div>
+</div>
+</body>
 </html>
